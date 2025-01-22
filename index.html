@@ -273,37 +273,40 @@
             <div class="row">
                 <div class="col-xl mx-auto">
                     <h2 class="text-center">About Us</h2>
-                    <p class="text-justify " style="font-family: 'Sapient', sans-serif;" >Located in the heart of Panipat's dynamic landscape, Geeta University has
-                        earned its reputation as the best university in Haryana and is making its mark as one of the
-                        best universities in India. As the first university to fully implement NEP 2022, we are
-                        redefining education with an innovative and student-centric approach that prepares learners for
-                        the future.
-
-                        At Geeta University, experiential learning and outcome-based education are at the core of our
-                        academic philosophy. Students gain hands-on experience and achieve measurable success, supported
-                        by a flexible choice-based credit system that allows them to personalize their educational
-                        paths. Our unique Earn While You Learn program bridges the gap between academics and industry,
-                        enabling students to gain valuable work experience while pursuing their degrees.
-
-                        We take pride in our commitment to skill development, offering certifications through
-                        partnerships with global leaders like Cisco, Red Hat, Amazon AWS, GitHub, HubSpot, Oracle,
-                        EC-Council, CompTIA, and edX. These opportunities empower students to stand out in competitive
-                        industries, solidifying our position as the best university in Haryana.
-
-                        Innovation thrives in our state-of-the-art interdisciplinary research labs, where students
-                        collaborate on groundbreaking projects. Guided by a team of distinguished faculty, our learners
-                        receive unmatched mentorship that paves the way for both academic excellence and professional
-                        success.
-
-                        Through the Go Global with GU initiative, we open doors to international opportunities,
-                        equipping students with the skills and exposure needed to excel in the global arena. Geeta
-                        University isn’t just a place to study—it’s a stepping stone to a brighter future. With a
-                        perfect blend of academic rigor, skill-building, and global outlook, we continue to shape
-                        tomorrow’s leaders and affirm our standing as one of the best universities in India.</p>
+                    <div class="text-content" style="font-family: 'Sapient', sans-serif;">
+                        <p class="text-justify text-hidden" id="aboutText">
+                            Located in the heart of Panipat's dynamic landscape, Geeta University has earned its reputation
+                            as the best university in Haryana and is making its mark as one of the best universities in India. 
+                            As the first university to fully implement NEP 2022, we are redefining education with an innovative 
+                            and student-centric approach that prepares learners for the future.
+    
+                            At Geeta University, experiential learning and outcome-based education are at the core of our 
+                            academic philosophy. Students gain hands-on experience and achieve measurable success, supported 
+                            by a flexible choice-based credit system that allows them to personalize their educational paths. 
+                            Our unique Earn While You Learn program bridges the gap between academics and industry, enabling 
+                            students to gain valuable work experience while pursuing their degrees.
+    
+                            We take pride in our commitment to skill development, offering certifications through partnerships 
+                            with global leaders like Cisco, Red Hat, Amazon AWS, GitHub, HubSpot, Oracle, EC-Council, CompTIA, 
+                            and edX. These opportunities empower students to stand out in competitive industries, solidifying 
+                            our position as the best university in Haryana.
+    
+                            Innovation thrives in our state-of-the-art interdisciplinary research labs, where students 
+                            collaborate on groundbreaking projects. Guided by a team of distinguished faculty, our learners 
+                            receive unmatched mentorship that paves the way for both academic excellence and professional 
+                            success.
+    
+                            Through the Go Global with GU initiative, we open doors to international opportunities, equipping 
+                            students with the skills and exposure needed to excel in the global arena. Geeta University isn’t 
+                            just a place to study—it’s a stepping stone to a brighter future. With a perfect blend of academic 
+                            rigor, skill-building, and global outlook, we continue to shape tomorrow’s leaders and affirm our 
+                            standing as one of the best universities in India.
+                        </p>
+                        <button class="btn btn-link p-0" id="readMoreBtn">Read More</button>
+                    </div>
                     <div class="video_sctn mt-4 mb-2">
                         <img src="./images/video.jpg" class="img-fluid" alt="">
-                        <button type="button" class="btn video-play-button" data-toggle="modal"
-                            data-target="#videoModal">
+                        <button type="button" class="btn video-play-button" data-toggle="modal" data-target="#videoModal">
                             <span></span>
                         </button>
                     </div>
@@ -10284,6 +10287,18 @@
         $('.banner_sections .carousel').carousel({
             interval: 2000
         })
+    </script>
+    <script>
+        document.getElementById('readMoreBtn').addEventListener('click', function () {
+            const text = document.getElementById('aboutText');
+            if (text.classList.contains('text-hidden')) {
+                text.classList.remove('text-hidden');
+                this.textContent = 'Read Less';
+            } else {
+                text.classList.add('text-hidden');
+                this.textContent = 'Read More';
+            }
+        });
     </script>
 </body>
 

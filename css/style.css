@@ -376,6 +376,17 @@ span.rule_banner {
     border-right:1px solid #fff;
 }
 
+
+ /* Mobile-specific styles for truncation */
+ @media (max-width: 768px) {
+    .text-hidden {
+        max-height: 120px; /* Adjust height based on how much content you want to show */
+        overflow: hidden;
+        white-space: normal;
+        text-overflow: ellipsis;
+    }
+}
+
 @media (min-width:320px) and (max-width:480px) {
     .banner_section {
         padding-top:10%;
@@ -479,8 +490,12 @@ section.geeta_uni_awards img {
 }
 .aboutUs_section .video_sctn {
     position: relative;
+    border-radius: 100px;
 }
-
+.aboutUs_section .video_sctn img{
+    border-radius: 10px;
+    
+}
 .aboutUs_section .video_sctn .btn {
     position: absolute;
     color: #fff;
@@ -583,6 +598,13 @@ opacity:1;
         font-weight:500;
         color:#000;
     }
+
+    .aboutUs_section .video_sctn img{
+        border-radius: 10px;
+        height: 60vw;
+        
+    }
+    
 }
 
 /* about us section end  */
