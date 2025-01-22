@@ -385,10 +385,43 @@ span.rule_banner {
 /* Mobile-specific styles for truncation */
 @media (max-width: 768px) {
   .text-hidden {
-    max-height: 120px; /* Adjust height based on how much content you want to show */
+    max-height: 125px; /* Adjust height based on how much content you want to show */
     overflow: hidden;
     white-space: normal;
     text-overflow: ellipsis;
+  }
+}
+
+.modal-alert h2 {
+  font-size: 26px;
+  line-height: 1.7;
+}
+
+.blink {
+  text-decoration: blink;
+  -webkit-animation-name: blinker;
+  -webkit-animation-duration: 0.6s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
+}
+
+.blink {
+  animation: blinker 1s linear infinite;
+  font-size: 1.5em;
+  margin-bottom: 00px;
+  color: #dc3545;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .modal-alert h2 {
+    font-size: 20px;
   }
 }
 
