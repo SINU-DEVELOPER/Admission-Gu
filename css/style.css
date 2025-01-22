@@ -434,7 +434,7 @@ span.rule_banner {
     font-weight: 700;
 }
 .key_highlightSection .key_box h4{
-    color: #000;
+    color: #243873;
     font-size: 18px;
     font-weight: 500;
 }
@@ -490,12 +490,21 @@ section.geeta_uni_awards img {
 }
 .aboutUs_section .video_sctn {
     position: relative;
-    border-radius: 100px;
-}
-.aboutUs_section .video_sctn img{
-    border-radius: 10px;
     
+   
 }
+
+.overlay-text {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
 .aboutUs_section .video_sctn .btn {
     position: absolute;
     color: #fff;
@@ -600,7 +609,7 @@ opacity:1;
     }
 
     .aboutUs_section .video_sctn img{
-        border-radius: 10px;
+        /* border-radius: 10px; */
         height: 60vw;
         
     }
@@ -681,9 +690,9 @@ opacity:1;
 }
 .craft_dvs {
     position: relative;
-    border-right: 2px solid #F07E1D;
+    border: 2px solid grey;
     text-align: right;
-    padding: 0 12px 12px 0;
+    padding:14px;
     margin-top: 15px;
     height:100%;
 }
@@ -694,7 +703,7 @@ opacity:1;
     bottom: 0;
     width: 65%;
     height: 1.5px;
-    background: #F07E1D;
+    /* background: grey; */
 }
 .craft_dvs p {
     margin:0px;
@@ -987,7 +996,7 @@ opacity:1;
     right: 16px;
     box-shadow: 0 0 10px #ddd;
     /* background-color: var(--whiteColor); */
-    background: #CE0004;
+    background: #233671;
     border-radius: 100%;
     width: 60px;
     height: 60px;
@@ -2168,8 +2177,7 @@ section.scholarship-section .zero-tution {
         margin: 15px 0px;
         padding: 10px;
         text-align: left;
-        border-left: 2px solid #F07E1D;
-        border-right: 0 solid #F07E1D;
+        border:2px solid grey;
     }
     .craft_dvs:after {
         content: "";
@@ -2179,7 +2187,7 @@ section.scholarship-section .zero-tution {
         bottom: 0;
         width: 65%;
         height: 1.5px;
-        background: #F07E1D;
+        /* background: #F07E1D; */
     }.craft_dvs p {
         margin: 0px;
         font-size: 14px;
