@@ -382,6 +382,28 @@ span.rule_banner {
   border-right: 1px solid #fff;
 }
 
+/* famous faces */
+
+.famous-faces-container
+{
+  position: relative;
+}
+
+.famous-faces-text
+{
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  font-weight: 800;
+}
+
+
+
+
+
 /* Mobile-specific styles for truncation */
 @media (max-width: 768px) {
   .text-hidden {
@@ -390,6 +412,31 @@ span.rule_banner {
     white-space: normal;
     text-overflow: ellipsis;
   }
+
+  .craft_your_path .card
+  {
+    height: 100px;
+    margin: 10px 15px;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+    height: 100%;            
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+  }
+
+
+
+
 }
 
 .modal-alert h2 {
@@ -711,56 +758,32 @@ section.geeta_uni_awards img {
 
 /* craft your path section start */
 
-.craft_your_path {
-  background: #fff;
-  /* background: linear-gradient(90deg, rgba(2,0,36,0) 73%, rgba(240,126,29,0.1517857142857143) 73%); */
-  padding: 0 0 3%;
+.craft-btn
+{
+  padding: 0;
+  border: 0;
+  background-color: transparent;
 }
-.craft_your_path h2 {
-  font-size: 50px;
-  font-weight: 700;
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(26%) sepia(97%) saturate(5163%) hue-rotate(212deg) brightness(94%) contrast(92%);
+  font-size: 1.5rem;
 }
-.craft_dvs {
-  position: relative;
-  border: 2px solid grey;
-  text-align: right;
-  padding: 14px;
-  margin-top: 15px;
-  height: 100%;
+
+.craft_your_path .card
+{
+  background-color: #d3d3d3be;
+  border: none;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: left;
 }
-.craft_dvs:after {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 65%;
-  height: 1.5px;
-  /* background: grey; */
-}
-.craft_dvs p {
-  margin: 0px;
-}
-.craft_your_path h4 {
-  font-weight: bold;
-  color: #000;
-}
-.craft_your_path hr {
-  width: 30%;
-  border-bottom: 5px solid #f07e1d;
-}
-@media (min-width: 320px) and (max-width: 480px) {
-  .craft_your_path {
-    padding: 10% 4%;
-  }
-  .craft_your_path h2 {
-    font-size: 35px;
-  }
-  .craft_your_path h4 {
-    font-weight: bold;
-    color: #000;
-    font-size: 16px;
-  }
-}
+
+
+
+
 
 /* craft your path section end  */
 
@@ -1038,7 +1061,7 @@ section.geeta_uni_awards img {
   right: 16px;
   box-shadow: 0 0 10px #ddd;
   /* background-color: var(--whiteColor); */
-  background: #233671;
+  background: #ff7300;
   border-radius: 100%;
   width: 60px;
   height: 60px;
@@ -1941,10 +1964,13 @@ section.scholarship-section .schoal_one h2 {
   text-transform: uppercase;
   text-align: center;
   width: fit-content;
+  font-family: 'Sapient', sans-serif;
 }
 section.scholarship-section .schoal_one h2 > span {
   font-size: 34px;
   font-weight: 700;
+  font-family: 'Sapient', sans-serif;
+
 }
 section.scholarship-section .color-grey {
   color: rgba(255, 255, 255, 0.59);
@@ -2106,13 +2132,20 @@ section.scholarship-section .zero-tution {
 @media (min-width: 0) and (max-width: 767.98px) {
   section.scholarship-section .schoal_one {
     padding: 40px 15px 0;
+  font-family: 'Sapient', sans-serif;
+
   }
   section.scholarship-section .schoal_one h2 {
     color: #fff;
     font-size: 20px;
+  font-family: 'Sapient', sans-serif;
+
+    
   }
   section.scholarship-section .schoal_one h2 > span {
     font-size: 24px;
+  font-family: 'Sapient', sans-serif;
+
   }
   section.scholarship-section .scho-text h3 {
     font-size: 26px;
@@ -2185,33 +2218,7 @@ section.scholarship-section .zero-tution {
   .key_highlightSection {
     padding: 60px 0 20px;
   }
-  .craft_your_path h2 {
-    font-size: 24px;
-    font-weight: 700;
-  }
-  .craft_your_path h3 {
-    font-size: 16px;
-  }
-  .craft_dvs {
-    margin: 15px 0px;
-    padding: 10px;
-    text-align: left;
-    border: 2px solid grey;
-  }
-  .craft_dvs:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: unset;
-    bottom: 0;
-    width: 65%;
-    height: 1.5px;
-    /* background: #F07E1D; */
-  }
-  .craft_dvs p {
-    margin: 0px;
-    font-size: 14px;
-  }
+  
 
   .timeline-step:after {
     background: #000;
