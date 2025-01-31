@@ -1856,8 +1856,9 @@ section.addmission_process_section .add-head h2 {
     height: 75px;
   }
   .award_winning h2 {
-    font-size: 35px;
-    line-height: 50px;
+    font-size: 30px;
+    padding: 10px;
+    line-height: 45px;
   }
   .award_winning h2 span.leading {
     font-size: 20px;
